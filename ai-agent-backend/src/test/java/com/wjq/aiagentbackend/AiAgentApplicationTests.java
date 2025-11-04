@@ -1,4 +1,4 @@
-package com.wjq.aiagent;
+package com.wjq.aiagentbackend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
