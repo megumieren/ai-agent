@@ -10,15 +10,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class SpringAiAiInvoke implements CommandLineRunner {
     @Resource
-    private ChatModel dashScopeChatModel;
+    private ChatModel dashscopeChatModel;
 
     @Override
     public void run(String... args) throws Exception {
-        AssistantMessage output = dashScopeChatModel.call(new Prompt("你好")).getResult().getOutput();
-
+        AssistantMessage output = dashscopeChatModel.call(new Prompt("你好")).getResult().getOutput();
         String text = output.getText();
         System.out.println(text);
     }
-
-
 }
